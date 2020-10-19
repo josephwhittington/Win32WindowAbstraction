@@ -35,8 +35,8 @@ Window::Window(unsigned int pw, unsigned int ph, const WCHAR* pwindow_title)
 	if (!mhWnd)
 	{
 		MessageBox(nullptr, L"Window Creation failed", L"Initialization Error", MB_OK);
+		return;
 	}
-
 	ShowWindow(mhWnd, SW_SHOW);
 }
 

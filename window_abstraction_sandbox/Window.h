@@ -15,9 +15,9 @@ public:
 
 	UINT ProcessMessages();
 
-	static LRESULT CALLBACK MSGInit(_In_ HWND   hWnd, _In_ UINT   message, _In_ WPARAM wParam, _In_ LPARAM lParam);
-	static LRESULT CALLBACK MSGMiddleWare(_In_ HWND   hWnd, _In_ UINT   message, _In_ WPARAM wParam, _In_ LPARAM lParam);
-	LRESULT CALLBACK HandleMSG(_In_ HWND   hWnd, _In_ UINT   message, _In_ WPARAM wParam, _In_ LPARAM lParam);
+	static LRESULT CALLBACK MSGInit(HWND   hWnd, UINT message, WPARAM wParam, LPARAM lParam);
+	static LRESULT CALLBACK MSGMiddleWare(HWND   hWnd, UINT   message, WPARAM wParam, LPARAM lParam);
+	LRESULT CALLBACK HandleMSG(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 private:
 	HINSTANCE mhInst;
