@@ -45,8 +45,9 @@ HINSTANCE Window::GetInstance()
 	return mhInst;
 }
 
-void Window::ChangeWindowTitle()
+void Window::SetWindowTitle(const WCHAR* new_title)
 {
+	SetWindowText(mhWnd, new_title);
 }
 
 UINT Window::ProcessMessages()

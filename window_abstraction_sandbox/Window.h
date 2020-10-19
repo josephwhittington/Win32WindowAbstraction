@@ -11,7 +11,7 @@ public:
 	// Getters / setters
 	HINSTANCE GetInstance();
 
-	void ChangeWindowTitle();
+	void SetWindowTitle(const WCHAR* new_title);
 
 	UINT ProcessMessages();
 
@@ -22,4 +22,6 @@ public:
 private:
 	HINSTANCE mhInst;
 	HWND mhWnd;
+
+	WCHAR* mwindowTitle = nullptr;
 };
