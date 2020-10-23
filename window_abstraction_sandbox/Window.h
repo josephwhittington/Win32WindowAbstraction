@@ -6,7 +6,7 @@ class Window
 {
 public:
 	Window(unsigned int pw, unsigned int ph, const WCHAR* pwindow_title);
-	~Window() = default;
+	~Window();
 
 	// Getters / setters
 	HINSTANCE GetInstance();

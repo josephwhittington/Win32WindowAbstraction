@@ -40,6 +40,11 @@ Window::Window(unsigned int pw, unsigned int ph, const WCHAR* pwindow_title)
 	ShowWindow(mhWnd, SW_SHOW);
 }
 
+Window::~Window()
+{
+	DestroyWindow(mhWnd);
+}
+
 HINSTANCE Window::GetInstance()
 {
 	return mhInst;

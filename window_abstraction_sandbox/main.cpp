@@ -9,7 +9,6 @@ int WINAPI wWinMain(_In_ HINSTANCE hInst, _In_opt_ HINSTANCE p, _In_ PWSTR lpCmd
 
 	while (game_window.ProcessMessages() != WM_QUIT)
 	{
-		int i = 2 + 2;
 	}
 
 	return 0;
